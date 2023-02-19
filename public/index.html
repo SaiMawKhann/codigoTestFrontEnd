@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/assets/css/style.css">
+    
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!-- <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar">
+          <div class="p-4 pt-5">
+              <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(access/images/schoollogo.jpg);"></a>
+              <ul class="list-unstyled components mb-5">
+                  <li class="active">
+                      <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Student</a>
+                      <ul class="collapse list-unstyled" id="homeSubmenu">
+                          <li>
+                              <a href="StudentAttendance.aspx">Student Attandance</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#EmployeeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Employee</a>
+                      <ul class="collapse list-unstyled" id="EmployeeSubmenu">
+                          <li>
+                              <a href="Employees.aspx">Employees</a>
+                          </li>
+                          <li>
+                              <a href="EmployeeAttandance.aspx">Employee Attandance</a>
+                          </li>
+                          <li>
+                              <a href="EmployeeAttandanceManagement.aspx">Attandance Management</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#ClassRoomAndSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Class Room and Subject</a>
+                      <ul class="collapse list-unstyled" id="ClassRoomAndSubmenu">
+                          <li>
+                              <a href="ClassRoom.aspx">Class Room</a>
+                          </li>
+                          <li>
+                              <a href="SubjectCreate.aspx">Subject</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Time Table</a>
+                      <ul class="collapse list-unstyled" id="pageSubmenu">
+                          <li>
+                              <a href="ClassTimeTable.aspx">ClassTimeTable</a>
+                          </li>
+                          <li>
+                              <a href="ClassTimeTableEdit.aspx">Edit ClassTimeTable</a>
+                          </li>
+                          <li>
+                              <a href="Period.aspx">Period</a>
+                          </li>
+                          <li>
+                              <a href="ReportViewer.aspx">Report</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#ExamSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Exam Management</a>
+                      <ul class="collapse list-unstyled" id="ExamSubmenu">
+                          <li>
+                              <a href="SubjectExamMarkCreate.aspx">Exam Mark Create</a>
+                          </li>
+                          <li>
+                              <a href="ExamTimeTable.aspx">ExamTimeTable</a>
+                          </li>
+                          <li>
+                              <a href="ExamMarkEntry.aspx">ExamMarkEntry</a>
+                          </li>
+                          <li>
+                              <a href="ExamMarkSheet.aspx">ExamMarkSheet</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#HRSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">HR Management</a>
+                      <ul class="collapse list-unstyled" id="HRSubmenu">
+                          <li>
+                              <a href="HRDashboard.aspx">Dashboard</a>
+                          </li>
+                          <li>
+                                <a href="#Attandance" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Attandance</a>
+                              <ul class="collapse list-unstyled" id="Attandance">
+                                  <li>
+                                  <a href="HRAttandance.aspx">Attandance</a>
+                                  </li>
+                                  <li>
+                                      <a href="HRAttandanceInsert.aspx">Attandance Insert</a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#PayRoll" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pay Roll</a>
+                              <ul class="collapse list-unstyled" id="PayRoll">
+                                  <li>
+                                      <a href="HRPayRoll.aspx">Pay Roll</a>
+                                  </li>
+                                  <li>
+                                      <a href="HRPayRollInsert.aspx">Pay Roll Insert</a>
+                                  </li>
+                              </ul>
+                          </li>
+                            <li>
+                              <a href="HRLeaveRecord.aspx">Leave Record</a>
+                          </li>
+                          <li>
+                              <a href="ExamTimeTable.aspx">Report</a>
+                          </li>
+                          <li>
+                              <a href="HRBankDetails.aspx">Bank Detail</a>
+                          </li>
+                      </ul>
+
+                      <div class="footer">
+                          <p>
+                              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                          <!-- </p>
+                      </div>
+
+          </div>
+      </nav>
+
+      <!-- Page Content  -->
+      <!-- <div id="content" class="p-4 p-md-5">
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+                  <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                      <i class="fa fa-bars"></i>
+                      <span class="sr-only">Toggle Menu</span>
+                  </button>
+                  <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fa fa-bars"></i>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="nav navbar-nav ml-auto">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="About.aspx">About</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="Contact.aspx">Contact</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </div>
+  </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/popper.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
